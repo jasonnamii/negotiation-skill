@@ -1,6 +1,8 @@
 ---
-
-## name: negotiation-skill description: | 협상 설계·시뮬·복기 엔진. 5-Layer Analysis Architecture 기반 깊이 있는 협상 전략. P1: 협상스킬, negotiation skill, 협상설계, 협상전략, BATNA, ZOPA, 심리분석, 게임이론, 문화협상. P2: 협상 준비해줘, 시뮬레이션해줘, negotiate, prepare negotiation, deadlock. P3: 협상 막혔어, 심리적 앵커링, 문화적 차이, 게임이론 적용, 3D협상. P4: 텀시트 받았을 때, 파트너십 조건 조율할 때, 분쟁 협상. P5: 협상전략서로, 협상분석으로, 레퍼런스 기반. NOT: 사업전략(→biz-skill), 투자유치 전반(→startup-investment), 개인심리(→human-skill), 조직운영(→management-skill).
+name: negotiation-skill
+description: "협상 설계·시뮬·복기 엔진. 5-Layer Analysis Architecture 기반 깊이 있는 협상 전략. P1: 협상스킬, negotiation skill, 협상설계, 협상전략, BATNA, ZOPA, 심리분석, 게임이론, 문화협상. P2: 협상 준비해줘, 시뮬레이션해줘, negotiate, prepare negotiation, deadlock. P3: 협상 막혔어, 심리적 앵커링, 문화적 차이, 게임이론 적용, 3D협상. P4: 텀시트 받았을 때, 파트너십 조건 조율할 때, 분쟁 협상. P5: 협상전략서로, 협상분석으로, 레퍼런스 기반. NOT: 사업전략(→biz-skill), 투자유치 전반(→startup-investment), 개인심리(→human-skill), 조직운영(→management-skill)."
+version: 1.0.0
+---
 
 # Negotiation Skill — 협상 설계 엔진
 
@@ -139,6 +141,65 @@ Layer판정핵심 질문L1 Interest● / ○ / -L2 Structure● / ○ / -L3 Psyc
 - biz-skill → 전략적 맥락 (L1 이해관계 프레이밍)
 
 ---
+
+## PRE_WRITE — 협상전략서·시나리오·액션플랜 작성 직전 룰
+
+**목적:** 5-Layer 분석·시나리오·액션플랜 *작성 시점*에 단언형·수치+조건·동사 강제. 협상 현장 즉시 활용 가능하게.
+
+### 5룰 (작성 직전 강제)
+
+| # | 룰 | 협상 결로 변환 | FAIL 신호 |
+|---|---|---|---|
+| 1 | **BATNA·ZOPA 단문** | 양측 BATNA = 1줄 ≤30자 명시. ZOPA = 수치 범위 1조 | "대안이 좀 있다" 추상 |
+| 2 | **단일 전략** | 1쟁점 1전략 (시나리오 분기는 OK) | "A하면서 B도" |
+| 3 | **수치+심리 메커니즘** | 앵커값·양보 비율 = 수치. L3 심리(앵커링·손실회피) 1조 | "강하게 나간다" 추상 |
+| 4 | **If-Then 명시** | 시나리오 = "If 상대 X → Then 우리 Y" verbatim | 막연한 대응 |
+| 5 | **AI식 사전회피** | "윈윈 솔루션", "장기적 파트너십", "건설적 대화" — 작성 단계 차단 | 협상관용어 |
+
+### 모드별 PRE_WRITE
+
+- **설계**: 5-Layer ●층 1줄 분석. BATNA·ZOPA 수치
+- **돌파**: 교착패턴 = 단언형 1줄 진단. 권장 기법 동사
+- **복기**: 5층별 평가 = 수치 + 학습 1줄
+- **액션플랜**: 협상 전·중·후 액션 = 동사시작
+
+### 자체검증
+
+| # | 체크 | 위반 |
+|---|------|------|
+| 1 | BATNA·ZOPA ≤30자, 수치? | 추상 = 수치화 |
+| 2 | If-Then verbatim? | 막연 = If-Then 변환 |
+| 3 | 심리 메커니즘 1조? | 누락 = L3 보완 |
+| 4 | AI식 협상관용어 hit? | hit ≥ 1 = 평문 변환 |
+
+---
+
+
+---
+
+## §CONFIRM_GATE — 송출 직전 형 컨펌 (3단계 가드)
+
+**목적:** PRE_WRITE 자가신고 우회 차단. 자체검증 통과 = 송출 ✗ → 형 컨펌 후 송출.
+
+**발동:** 산출물 송출 *직전* 1회.
+
+**형식 (verbatim):**
+```
+🔍 송출 전 검토 부탁드려요. AI 티·번역투·장황 있나요?
+[OK / 수정 / 재작성]
+```
+
+**규칙:**
+- 형 OK → 최종 송출
+- 형 수정 → 형 지적 부분만 PRE_WRITE 재진입 → 재출력
+- 형 재작성 → 모드 처음부터 재실행
+
+**SCOPE_OUT (컨펌 면제):**
+- ≤5줄 답변·단답·확인성·실행보고
+- 진단 본문 (대화 내 분석, 산출물 ✗)
+- 일반대화·핑퐁·컨펌게이트 자체
+
+**CHECK:** 산출물 송출인데 컨펌게이트 미발동 = FAIL → 송출 폐기·재출력.
 
 ## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
 
