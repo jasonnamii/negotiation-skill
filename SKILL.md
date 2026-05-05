@@ -1,6 +1,13 @@
 ---
 name: negotiation-skill
-description: "협상 설계·시뮬·복기 엔진. 5-Layer Analysis Architecture 기반 깊이 있는 협상 전략. P1: 협상스킬, negotiation skill, 협상설계, 협상전략, BATNA, ZOPA, 심리분석, 게임이론, 문화협상. P2: 협상 준비해줘, 시뮬레이션해줘, negotiate, prepare negotiation, deadlock. P3: 협상 막혔어, 심리적 앵커링, 문화적 차이, 게임이론 적용, 3D협상. P4: 텀시트 받았을 때, 파트너십 조건 조율할 때, 분쟁 협상. P5: 협상전략서로, 협상분석으로, 레퍼런스 기반. NOT: 사업전략(→biz-skill), 투자유치 전반(→investment-skill), 개인심리(→human-skill), 조직운영(→management-skill)."
+description: |
+  협상 설계·시뮬·복기 엔진. 5-Layer Analysis Architecture 기반 깊이 있는 협상 전략.
+    P1: 협상스킬, negotiation skill, 협상설계, 협상전략, BATNA, ZOPA, 심리분석, 게임이론, 문화협상, 협상준비, 협상시뮬, 협상복기, 딜협상, 파트너십협상, 분쟁협상, 계약협상, 연봉협상, 가격협상, 텀시트협상, 조건협상, 협상심리, 앵커링, 협상전술, 협상레버.
+    P2: 협상 준비해줘, 시뮬레이션해줘, negotiate, prepare negotiation, deadlock, 협상 설계해줘, 협상 전략 짜줘, 협상 막혔어, 딜 어떻게 해, 조건 어떻게 풀어.
+    P3: negotiation strategy, BATNA analysis, ZOPA mapping, game theory, cultural negotiation, 3D negotiation, anchoring tactics.
+    P4: 텀시트 받았을 때, 파트너십 조건 조율할 때, 분쟁 협상, 딜 클로징 전.
+    P5: 협상전략서로, 협상분석으로, .md로.
+    NOT: 사업전략(→biz-skill), 투자유치 전반(→investment-skill), 개인심리(→human-skill), 조직운영(→management-skill), 계약검토(→contract-consulting).
 version: 1.0.0
 ---
 
