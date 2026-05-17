@@ -15,9 +15,31 @@ version: 1.0.0
 
 person-profiler가 "상대를 아는 것", biz-skill이 "전략을 짜는 것"이라면, 이 스킬은 **"테이블 위에서 어떻게 주고받을 것인가"를 5-Layer 깊이로 구조화하는 것**.
 
+
+## Skill Boundaries
+
+- **하는 것** — 협상 설계·시뮬·복기 엔진.
+- **안 하는 것** — 사업전략(→biz-skill), 투자유치 전반(→investment-skill), 개인심리(→human-skill), 조직운영(→management-skill), 계약검토(→contract-consulting).
+
 협상은 준비의 질이 결과의 80%를 결정한다(HBS PON). 이 스킬은 그 준비를 프로토콜화하되, 심리학·게임이론·문화차이·프로세스 설계를 체계적으로 통합한다.
 
 ---
+
+## When to Use
+
+- 사용자가 "협상 준비해줘", "시뮬레이션해줘", "negotiate", "prepare negotiation", "deadlock" 같은 표현으로 발동
+- 텀시트 받았을 때, 파트너십 조건 조율할 때, 분쟁 협상, 딜 클로징 전.
+- **안 쓸 때** — 사업전략(→biz-skill), 투자유치 전반(→investment-skill), 개인심리(→human-skill), 조직운영(→management-skill), 계약검토(→contract-consulting).
+
+
+## Prerequisites
+
+| # | 체크 | 미충족 시 |
+|---|------|-----------|
+| 1 | 대상·입력 명확 (스킬 발동 의도 확인) | 1줄 확인 후 진입 |
+| 2 | references/ 폴더 접근 가능 | inline fallback |
+| 3 | scripts/ 실행 권한 | 권한 보정 후 재시도 |
+
 
 ## ⛔ 절대 규칙
 
@@ -190,11 +212,50 @@ Layer판정핵심 질문L1 Interest● / ○ / -L2 Structure● / ○ / -L3 Psyc
 ## 🚨 MUST cascade → shaper-skill
 모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
-## Gotchas
+## Output Path
+
+| 산출물 | 경로 |
+|---|---|
+| 주 산출물 | `mnt/outputs/negotiation-skill_{topic}_{YYYY-MM-DD}.md` |
+| 형식 | 협상전략서로, 협상분석으로, .md로. |
+| 리서치 결과 (해당 시) | `{VAULT}/_skills research/negotiation-skill/{YYYY-MM-DD}_{topic}.md` |
+
+## Reference Index
+
+| 파일 | 내용 | 언제 |
+|---|---|---|
+| `references/advanced-frameworks.md` | advanced frameworks | 해당 단계 진입 시 |
+| `references/cultural-negotiation.md` | cultural negotiation | 해당 단계 진입 시 |
+| `references/game-theory.md` | game theory | 해당 단계 진입 시 |
+| `references/negotiation-psychology.md` | negotiation psychology | 해당 단계 진입 시 |
+| `references/negotiation-theories.md` | negotiation theories | 해당 단계 진입 시 |
+| `references/post-doctor-notes.md` | post doctor notes | 해당 단계 진입 시 |
+| `references/process-design.md` | process design | 해당 단계 진입 시 |
+
+
+## Next Phase
+
+본 스킬 작업 후 자연스럽게 이어지는 흐름:
+
+- 후속 작업 → `biz-skill`
+- 후속 작업 → `investment-skill`
+- 후속 작업 → `human-skill`
+- 후속 작업 → `management-skill`
+- 후속 작업 → `contract-consulting`
+
+## Failure Modes (Gotchas)
 
 함정대응BATNA 없이 전략 짜기§5 ①에서 양측 BATNA 미확정 → STOP + 명확화5-Layer 중 1개만 고집5개 층을 모두 스크리닝. 활성화된 층만 깊이 분석상대방 심리 프로필 건너뛰기L3 ●으로 판정되면 §3 스크리닝 필수"게임이론은 복잡해"라며 체크 스킵§4의 3가지 질문만 답하면 됨. 수학 불필요전술만 짜고 프로세스 설계 무시L5 무시 = 합의 후 이행 파괴. §5⑧에서 최소 액션 플랜 필수단일 시나리오최선·기본·최악 3가지. 각 시나리오에 L3 심리 기전 연결문화적 맥락 무시L4 관계 분석에서 상대의 문화 프로필 필수 (→ references/cultural-negotiation.md)상대를 "적"으로만 프레이밍L1 Interest에서 공동 이익 영역 반드시 탐색"이번엔 강하게 나가자" 감정 결정모든 전술을 L3·L4를 통해 재검증. 감정은 정보 아님
 
 ---
+
+
+## ❌ WRONG vs ✅ CORRECT
+
+```
+❌ WRONG: 트리거 단어만 보고 발동 — 본질·범위 확인 ✗ → 오발동·범위 이탈
+✅ CORRECT: Skill Boundaries·When to Use 확인 후 발동 → 본질 작업만 수행
+```
 
 ## References 경로
 
