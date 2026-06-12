@@ -1,5 +1,6 @@
 ---
 name: negotiation-skill
+version: 1.0
 description: |
   협상 설계·시뮬·복기 엔진. 5-Layer Analysis Architecture 기반 깊이 있는 협상 전략. 트리거: 협상스킬, negotiation skill, 협상설계, 협상전략, BATNA, ZOPA, 심리분석, 게임이론, 문화협상, 협상준비, 협상시뮬, 협상복기, 딜협상, 파트너십협상, 분쟁협상, 계약협상, 연봉협상, 가격협상, 텀시트협상, 조건협상, 협상심리, 앵커링, 협상전술, 협상레버. NOT: 사업전략(→biz-skill), 투자유치 전반(→investment-skill), 개인심리(→human-skill), 조직운영(→management-skill), 계약검토(→contract-consulting).
 ---
